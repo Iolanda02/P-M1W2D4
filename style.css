@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hidden-reference {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.hover-underlined:hover {
+    text-decoration: underline;
+}
+
+header {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #F2F2F2;
+    box-shadow: 0 5px 20px rgb(203 199 199);
+}
+
+#header-container {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#logo {
+    width: 10%;
+    min-width: 130px;
+    object-fit: cover;
+}
+
+#header-container button {
+    margin: 0 5px;
+}
+
+#header-container button i {
+    font-size: 1.2em;
+}
+
+.basic-button {
+    border: none;
+    background: transparent;
+}
+
+.basic-button span {
+    font-weight: 600;
+}
+
+.basic-button.not-active span {
+    opacity: 0.5;
+}
+
+.basic-button.active {
+    border-bottom: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.stroked-button {
+    border-radius: 15px;
+    background: transparent;
+    height: 2em;
+}
+
+.stroked-button span {
+    font-size: .9em;
+    margin: 0 5px;
+}
+
+.flat-button {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    border: none;
+    background: rgb(244, 81, 30);
+}
+
+.flat-button span {
+    color: white;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+}
+
+#main-section {
+    position: sticky;
+    bottom: 0;
+    margin-top: auto;
+    min-height: 103vh;
+}
+
+#main-content {
+    width: 50vw;
+    padding: 20px 15px;
+}
+
+#main-content #tabs {    
+    border-bottom: 1px solid #F2F2F2;
+    background: white;
+    height: 3em;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#tabs button {
+    height: inherit;
+}
+
+#articles-following {
+    display: none;
+}
+
+.article {
+    margin: 20px 0;
+    display: flex;
+    min-height: 170px;
+}
+
+.article .info {
+    margin-right: 10px;
+    width: 100%;
+    align-content: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+.author .icon {
+    margin-right: 8px;
+}
+
+.author span {
+    font-size: 0.8em;
+}
+
+.author .secondary-text {
+    font-size: 1em;
+    color: rgb(115, 115, 115);
+}
+
+.info h2 {
+    margin: 0.4em 0;    
+}
+
+.two-text-line-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.info p {
+    margin: 0.2em 0;
+    color: rgb(115, 115, 115);
+}
+
+.info .details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: rgb(115, 115, 115);
+    font-size: 0.8em;
+}
+
+.info .icons {
+    display: flex;
+}
+
+.topic {
+    background-color: rgb(242, 242, 242);
+    border-radius: 15px;
+    padding: 4px 8px;
+}
+
+.article .picture {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.article .picture img {
+    width: 100%;
+    height: 95%; 
+    object-fit: cover;
+}
+
+#vertical-separator {
+    height: auto;
+    border: 1px solid #F2F2F2;
+    margin: 0 2.5vw;
+}
+
+#side-container {
+    width: 25vw;
+    padding: 20px 10px;
+    position: sticky;
+    bottom: 0;
+    margin-top: auto;
+    min-height: 100vh;
+}
+
+#side-container section {
+    margin: 10px;
+}
+
+#side-container #social {
+    margin: 10px 25px;
+}
+
+#social .icons {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#social .icons img {
+    width: 20%;
+    height: auto;
+    min-width: 30px;
+    object-fit: cover;
+}
+
+#social #medium-logo {
+    margin: 0 5px;
+}
+
+#social #twitter-logo {
+    width: 10%;
+    margin: 0 5px;
+}
+
+#social .icons span {
+    font-size: 1.5em;
+    color: rgb(115, 115, 115);
+}
+
+#social p {
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+#social .stroked-button {
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+#social .stroked-button img {
+    width: 20%;
+    min-width: 20px;
+    object-fit: contain;
+}
+
+#social .stroked-button span {
+    align-self: center;
+    font-size: 1em;
+}
+
+.link-button {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+}
+
+#social .link-button {
+    font-size: 0.8em;
+    color: rgb(115, 115, 115);
+}
+
+#side-container #horizontal-separator {
+    border: 1px solid #F2F2F2;
+    margin: 10px;
+}
+
+#side-container h3 {
+    font-size: 0.9em;
+}
+
+#tips {
+    padding: 10px 0;
+}
+
+#tips .topics {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+#tips .topics .topic {
+    margin: 5px;
+    font-size: 0.8em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+}
+
+.follower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.follower .img-container {
+    width: 20%;
+}
+
+.follower img {    
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.follower .user-details {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    margin: 0 10px;
+}
+
+.follower .user-details .username {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.follower .user-details .description {
+    font-size: 0.8em;
+    color: rgb(115, 115, 115);
+}
+
+#saved .info {
+    margin: 15px 0;
+}
+
+#saved .info h2 {
+    font-size: 1em;
+}
+
+#user-content {
+    padding: 10px 0;
+}
+
+#other-saved-articles {
+    display: none;
+}
+
+#user-content .link-button {
+    padding: 0;
+    color: rgb(0, 128, 0);
+}
+
+#user-content .link-button:hover {
+    text-decoration: underline;
+}
+
+.undecorated {
+    text-decoration: none;
+}
+
+#navigation-links {
+    padding-top: 30px;
+}
+
+#navigation-links ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#navigation-links li {
+    display: inline-block;
+}
+
+#navigation-links li{
+    margin: 10px 20px 10px 0;
+}
+
+#navigation-links a {
+    color: rgb(115, 115, 115);
+}
+
+#navigation-links a:hover {
+    text-decoration: underline;
+}
